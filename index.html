@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="topo">
+            <input type="text" id="inputTarefa" placeholder="Adicionar tarefa">
+            <button id="btAdicionarTarefa">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+
+        <ul id="listaTarefas">
+    </div>
+
+    <div id="editarJanela">
+        <button id="fecharEdicao">
+            <i class="fa fa-remove"></i>
+        </button>
+        <h2 id="idTarefaEdicao"></h2>
+        <hr>
+        <form>
+            <div class="formEdicao">
+                <label for="nome">NOVA TAREFA</label>
+                <input type="text" id="nomeEdicao">
+            </div>
+            <div class="formEdicao">
+                <button id="botaoAtualizar">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicao"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+*body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rm;
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #9b59b6;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.topo input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.topo input:hover{
+    background: #f0ddee;
+}
+
+.topo button{
+    width: 45px;
+    border-radius: 12px;
+    border: 1px;
+    color: #9b59b6;
+    background: white;
+}
+
+.topo button:hover{
+    background: #f0ddee;
+    cursor: pointer;
+}
+
+#listaTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li{
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btAcao{
+    border-radius:12px;
+    border: none;
+    border: 1px solid;
+    color: #9b59b6;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: white;
+}
+
+.btAcao:hover{
+    background: #f0ddee;
+}
+
+#editarJanela{
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    translate: (-50%, -50%);
+    padding: 20px;
+    background: #9b59b6;
+    border: none;
+    border-radius: 12px;
+    width: 415px;
+    z-index: 200; /*janela aparecer acima da parte preta*/
+    display: none;
+}
+
+
+#editarJanela.abrir{
+    display: block !important;
+}
+
+#fecharEdicao{
+    border-radius:12px;
+    border: none;
+    color: #9b59b6;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    background: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#fecharEdicao:hover{
+    background: #f0ddee;
+}
+
+#janelaEdicao{
+    position: fixed;
+    top:0;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicao.abrir{
+    display: block !important;
+}
+
+.form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.formEdicao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formEdicao label{
+    margin-bottom: 7px;
+}
+
+.formEdicao input{
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+}
+
+.formEdicao input:hover{
+    background: #f0ddee;
+}
+
+.formEdicao button{
+    background: white;
+    border: none;
+    border-radius: 12px;
+    padding: 7px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formEdicao button:hover{
+    background: #f0ddee;
+}
+
+.textoTarefa{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
